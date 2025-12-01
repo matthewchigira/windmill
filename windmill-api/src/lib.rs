@@ -821,14 +821,14 @@ async fn ee_license() -> String {
 async fn openapi() -> Response {
     Response::builder()
         .header("content-type", "application/yaml")
-        .body(Body::from(include_str!("../openapi-deref.yaml")))
+        .body(Body::from(include_str!("openapi-deref.yaml")))
         .unwrap()
 }
 
 async fn openapi_json() -> Response {
     Response::builder()
         .header("content-type", "application/json")
-        .body(Body::from(include_str!("../openapi-deref.json")))
+        .body(Body::from(include_str!("openapi-deref.json")))
         .unwrap()
 }
 
